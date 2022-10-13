@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Виджет</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viget</title>
+  <link rel="stylesheet" href="/project/css/index.css">
 </head>
 <body>
-    <div class = "wrapper">
-        <h1>Рейтинг</h1>
-        <form action="#" class="form form_margin">
-            <div class = "form_item">
-                <div class="form_label">
-                    <div class="rating">
-                        <div class="rating_body">
-                            <div class="rating_active">
-                                <div class="rating_items">
-                                    <input type="radio" class="rating_item" value="1" name="rating">
-                                    <input type="radio" class="rating_item" value="2" name="rating">
-                                    <input type="radio" class="rating_item" value="3" name="rating">
-                                    <input type="radio" class="rating_item" value="4" name="rating">
-                                    <input type="radio" class="rating_item" value="5" name="rating">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rating_value">0</div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <script src="app.js"></script>
+  <script defer src="/project/js/app.js"></script>
+  <script defer src="/project/js/deleteItem.js"></script>
+  <div class="rate_background" onclick="set_rate(arguments[0], this);">
+     <div class="rate_bar" style="width: 50%;"></div>
+  </div>
+  <div id="rate"></div>
+  <div id="input">
+    <textarea class="input" id="content" type="text" name="key" placeholder="Оставьте отзыв"></textarea>
+    <button class="button" id="button" onclick="deleteItem()">Ввести</button>
+</div>
 </body>
 </html>

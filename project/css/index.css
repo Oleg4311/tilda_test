@@ -1,0 +1,30 @@
+/* внешний контейнер - фон с серыми звездочками */
+.rate_background {
+  position: relative;
+  width: 160px;
+  height: 32px;
+  background:url('/project/stars/star_gray.png') repeat-x;
+  cursor: pointer;
+}
+
+/* внутренний контейнер - полоса рейтинга с золотыми звездочками */
+.rate_bar {
+  position: absolute;
+  top: 0px;
+  left: 0px; 
+  height: 32px; 
+  background:url('/project/stars/star_gold.png') repeat-x;
+}
+
+.input{
+  display: none;
+  width: 220px;
+  height: 200px;  
+}
+
+.button{
+  display: none;
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+}
