@@ -10,13 +10,19 @@
 <body>
   <script defer src="/project/js/app.js"></script>
   <script defer src="/project/js/deleteItem.js"></script>
-  <div class="rate_background" onclick="set_rate(arguments[0], this);">
+  <div class="rate_background" id="area" onclick="myFunc(arguments[0], this); this.onclick=null">
      <div class="rate_bar" style="width: 50%;"></div>
   </div>
   <div id="rate"></div>
   <div id="input">
-    <textarea class="input" id="content" type="text" name="key" placeholder="Оставьте отзыв"></textarea>
+    <textarea class="input" id="content" type="text" name="key" placeholder="Что стоит улучшить?"></textarea>
     <button class="button" id="button" onclick="deleteItem()">Ввести</button>
 </div>
+<!-- <script>
+  area.value = localStorage.getItem('area');
+  area.onclick = () => {
+    localStorage.setItem('area', area.value)
+  };
+</script> -->
 </body>
 </html>
