@@ -3,7 +3,7 @@
   position: relative;
   width: 160px;
   height: 32px;
-  background:url('/stars/stars_white.png') repeat-x;
+  background:url('./stars_white.png') repeat-x;
   cursor: pointer;
 }
 
@@ -13,7 +13,7 @@
   top: 0px;
   left: 0px; 
   height: 32px; 
-  background:url('/stars/stars_gold.png') repeat-x;
+  background:url('./stars_gold.png') repeat-x;
 }
 
 .input{
