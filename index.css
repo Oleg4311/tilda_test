@@ -1,9 +1,9 @@
-/* внешний контейнер - фон с серыми звездочками */
+/* внешний контейнер - фон с белыми звездочками */
 .rate_background {
   position: relative;
   width: 160px;
   height: 32px;
-  background:url('./stars_white.png') repeat-x;
+  background:url('../stars_white.png') repeat-x;
   cursor: pointer;
 }
 
@@ -13,7 +13,7 @@
   top: 0px;
   left: 0px; 
   height: 32px; 
-  background:url('./stars_gold.png') repeat-x;
+  background:url('../stars_gold.png') repeat-x;
 }
 
 .input{
